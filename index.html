@@ -21,7 +21,7 @@
     ----------------------------------------------------->
     <section class="text-gray-500 text-xs">
       <div
-        class="container mx-auto flex justify-between items-center py-2 px-32 border-y"
+        class="container mx-auto flex justify-between items-center py-2 md:px-32 px-2 border-y"
       >
         <div class="text-xs flex">
           <h2>EDITION</h2>
@@ -43,19 +43,25 @@
             <h2 id="current-time" class="text-gray-900"></h2>
           </div>
 
-          <div class="pl-2">
+          <div class="pl-2 hidden md:block">
             <h2>DELHI</h2>
           </div>
         </div>
         <div>
-          <a href="#" class="mr-2 bg-red-600 text-gray-100 px-2 py-1 rounded"
+          <a
+            href="#"
+            class="mr-2 bg-red-600 text-gray-100 px-2 py-1 rounded hidden md:inline-block"
             >SUBSCRIBE TO NOI</a
           >
-          <a href="#" class="mr-2">SIGN IN</a>
-          <a href="#" class="mr-2 rounded-full border border-blue-600 p-1"
+          <a href="#" class="md:mr-2 mr-1">SIGN IN</a>
+          <a
+            href="#"
+            class="md:mr-2 mr-1 rounded-full border border-blue-600 p-1"
             ><i class="fa-brands fa-facebook text-blue-600"></i
           ></a>
-          <a href="#" class="mr-2 rounded-full border border-blue-500 p-1"
+          <a
+            href="#"
+            class="md:mr-2 mr-1 rounded-full border border-blue-500 p-1"
             ><i class="fa-brands fa-twitter text-blue-500"></i
           ></a>
           <a href="#" class="rounded-full border border-red-500 p-1"
@@ -68,8 +74,8 @@
     Heading bar of logo
     ----------------------------------------------------->
     <section class="text-gray-900">
-      <div class="container mx-auto px-32 py-5 text-center">
-        <h1 class="text-4xl font-bold">THE NEWS OF INDIA</h1>
+      <div class="container mx-auto md:px-32 px-4 py-5 text-center">
+        <h1 class="md:text-4xl text-xl font-bold">THE NEWS OF INDIA</h1>
       </div>
     </section>
 
@@ -77,9 +83,10 @@
     Navigation section
     ----------------------------------------------------->
     <header class="text-gray-600 body-font text-xs">
-      <div class="container mx-auto px-32">
+      <div class="container mx-auto md:px-32 px-4">
         <div class="flex items-center justify-between bg-gray-100">
-          <nav class="">
+          <i class="fa-solid fa-bars block md:hidden"></i>
+          <nav class="hidden md:inline-block">
             <span class="mr-2 hover:text-gray-900 font-bold pl-2">NOI</span>
             <a href="#" class="mr-2 hover:text-gray-900">Explainers</a>
             <a href="#" class="mr-2 hover:text-gray-900">Videos</a>
@@ -112,10 +119,10 @@
     News Feed Section
     ----------------------------------------------------->
     <section class="text-gray-600 body-font text-xs">
-      <div class="container px-32 py-5 mx-auto">
+      <div class="container md:px-32 px-4 py-5 mx-auto">
         <div class="flex flex-wrap">
           <div
-            class="border-r border-dotted border-gray-600 pr-6 lg:w-7/12 w-full"
+            class="border-r border-dotted border-gray-600 md:pr-6 lg:w-7/12 w-full"
           >
             <div>
               <div class="h-full rounded relative">
@@ -124,7 +131,9 @@
                   class="bg-gray-100 object-cover object-center mr-4"
                   src="./images/front-news/1.webp"
                 />
-                <p class="absolute bottom-2 p-2 text-gray-100 text-lg">
+                <p
+                  class="absolute bottom-2 p-2 text-gray-100 md:text-lg text-sm"
+                >
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Animi modi consectetur adipisicing elit.consectetur
                   adipisicing elit.
@@ -132,9 +141,12 @@
               </div>
             </div>
 
-            <div class="flex py-5">
+            <!----------------------------------------
+            small news feed down at the big feed news 
+            ------------------------------------------>
+            <div class="flex flex-col md:flex-row pt-5">
               <div
-                class="flex border-b border-dotted border-gray-600 mr-10 pb-4"
+                class="flex border-b border-dotted border-gray-600 md:mr-10 pb-4"
               >
                 <h2>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -147,7 +159,7 @@
                   />
                 </div>
               </div>
-              <div class="flex border-b border-dotted border-gray-600">
+              <div class="flex border-b border-dotted border-gray-600 pb-4">
                 <h2>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </h2>
@@ -160,9 +172,10 @@
                 </div>
               </div>
             </div>
-            <div class="flex py-5">
+
+            <div class="flex flex-col md:flex-row pt-5">
               <div
-                class="flex border-b border-dotted border-gray-600 mr-10 pb-4"
+                class="flex border-b border-dotted border-gray-600 md:mr-10 pb-4"
               >
                 <h2>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -175,35 +188,7 @@
                   />
                 </div>
               </div>
-              <div class="flex border-b border-dotted border-gray-600">
-                <h2>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </h2>
-                <div class="w-full">
-                  <img
-                    src="./images/short-news-img/m-short1.jpg"
-                    alt=""
-                    class="rounded"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="flex py-5">
-              <div
-                class="flex border-b border-dotted border-gray-600 mr-10 pb-4"
-              >
-                <h2>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </h2>
-                <div class="w-full">
-                  <img
-                    src="./images/short-news-img/m-short1.jpg"
-                    alt=""
-                    class="rounded"
-                  />
-                </div>
-              </div>
-              <div class="flex border-b border-dotted border-gray-600">
+              <div class="flex border-b border-dotted border-gray-600 pb-4">
                 <h2>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </h2>
@@ -216,9 +201,10 @@
                 </div>
               </div>
             </div>
-            <div class="flex py-5">
+
+            <div class="flex flex-col md:flex-row pt-5">
               <div
-                class="flex border-b border-dotted border-gray-600 mr-10 pb-4"
+                class="flex border-b border-dotted border-gray-600 md:mr-10 pb-4"
               >
                 <h2>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -231,7 +217,7 @@
                   />
                 </div>
               </div>
-              <div class="flex border-b border-dotted border-gray-600">
+              <div class="flex border-b border-dotted border-gray-600 pb-4">
                 <h2>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </h2>
@@ -244,9 +230,10 @@
                 </div>
               </div>
             </div>
-            <div class="flex py-5">
+
+            <div class="flex flex-col md:flex-row pt-5">
               <div
-                class="flex border-b border-dotted border-gray-600 mr-10 pb-4"
+                class="flex border-b border-dotted border-gray-600 md:mr-10 pb-4"
               >
                 <h2>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -259,7 +246,7 @@
                   />
                 </div>
               </div>
-              <div class="flex border-b border-dotted border-gray-600">
+              <div class="flex border-b border-dotted border-gray-600 pb-4">
                 <h2>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </h2>
@@ -272,9 +259,10 @@
                 </div>
               </div>
             </div>
-            <div class="flex py-5">
+
+            <div class="flex flex-col md:flex-row pt-5">
               <div
-                class="flex border-b border-dotted border-gray-600 mr-10 pb-4"
+                class="flex border-b border-dotted border-gray-600 md:mr-10 pb-4"
               >
                 <h2>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -287,7 +275,7 @@
                   />
                 </div>
               </div>
-              <div class="flex border-b border-dotted border-gray-600">
+              <div class="flex border-b border-dotted border-gray-600 pb-4">
                 <h2>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </h2>
@@ -300,9 +288,10 @@
                 </div>
               </div>
             </div>
-            <div class="flex py-5">
+
+            <div class="flex flex-col md:flex-row pt-5">
               <div
-                class="flex border-b border-dotted border-gray-600 mr-10 pb-4"
+                class="flex border-b border-dotted border-gray-600 md:mr-10 pb-4"
               >
                 <h2>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -315,7 +304,7 @@
                   />
                 </div>
               </div>
-              <div class="flex border-b border-dotted border-gray-600">
+              <div class="flex border-b border-dotted border-gray-600 pb-4">
                 <h2>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </h2>
@@ -328,9 +317,10 @@
                 </div>
               </div>
             </div>
-            <div class="flex py-5">
+
+            <div class="flex flex-col md:flex-row pt-5">
               <div
-                class="flex border-b border-dotted border-gray-600 mr-10 pb-4"
+                class="flex border-b border-dotted border-gray-600 md:mr-10 pb-4"
               >
                 <h2>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -343,7 +333,7 @@
                   />
                 </div>
               </div>
-              <div class="flex border-b border-dotted border-gray-600">
+              <div class="flex border-b border-dotted border-gray-600 pb-4">
                 <h2>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </h2>
@@ -356,9 +346,10 @@
                 </div>
               </div>
             </div>
-            <div class="flex py-5">
+
+            <div class="flex flex-col md:flex-row pt-5">
               <div
-                class="flex border-b border-dotted border-gray-600 mr-10 pb-4"
+                class="flex border-b border-dotted border-gray-600 md:mr-10 pb-4"
               >
                 <h2>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -371,7 +362,7 @@
                   />
                 </div>
               </div>
-              <div class="flex border-b border-dotted border-gray-600">
+              <div class="flex border-b border-dotted border-gray-600 pb-4">
                 <h2>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </h2>
@@ -384,8 +375,11 @@
                 </div>
               </div>
             </div>
-            <div class="flex pt-5">
-              <div class="flex mr-10 pb-4">
+
+            <div class="flex flex-col md:flex-row pt-5">
+              <div
+                class="flex border-b border-dotted border-gray-600 md:mr-10 pb-4"
+              >
                 <h2>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </h2>
@@ -397,7 +391,94 @@
                   />
                 </div>
               </div>
-              <div class="flex">
+              <div class="flex border-b border-dotted border-gray-600 pb-4">
+                <h2>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <div class="w-full">
+                  <img
+                    src="./images/short-news-img/m-short.jpg"
+                    alt=""
+                    class="rounded"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row pt-5">
+              <div
+                class="flex border-b border-dotted border-gray-600 md:mr-10 pb-4"
+              >
+                <h2>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <div class="w-full">
+                  <img
+                    src="./images/short-news-img/m-short1.jpg"
+                    alt=""
+                    class="rounded"
+                  />
+                </div>
+              </div>
+              <div class="flex border-b border-dotted border-gray-600 pb-4">
+                <h2>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <div class="w-full">
+                  <img
+                    src="./images/short-news-img/m-short.jpg"
+                    alt=""
+                    class="rounded"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row pt-5">
+              <div
+                class="flex border-b border-dotted border-gray-600 md:mr-10 pb-4"
+              >
+                <h2>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <div class="w-full">
+                  <img
+                    src="./images/short-news-img/m-short1.jpg"
+                    alt=""
+                    class="rounded"
+                  />
+                </div>
+              </div>
+              <div class="flex border-b border-dotted border-gray-600 pb-4">
+                <h2>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <div class="w-full">
+                  <img
+                    src="./images/short-news-img/m-short.jpg"
+                    alt=""
+                    class="rounded"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row pt-5">
+              <div
+                class="flex border-b border-dotted border-gray-600 md:mr-10 pb-4"
+              >
+                <h2>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <div class="w-full">
+                  <img
+                    src="./images/short-news-img/m-short1.jpg"
+                    alt=""
+                    class="rounded"
+                  />
+                </div>
+              </div>
+              <div class="flex border-b border-dotted border-gray-600 pb-4">
                 <h2>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </h2>
@@ -411,9 +492,11 @@
               </div>
             </div>
           </div>
-
+          <!-----------------------------------------------------------
+            side news
+          ------------------------------------------------------------->
           <div
-            class="lg:w-1/5 w-full border-r border-dotted border-gray-600 px-6"
+            class="lg:w-1/5 w-full border-r border-dotted border-gray-600 md:px-6"
           >
             <div>
               <img src="./images/short-news-img/short-news1.jpg" />
@@ -422,8 +505,11 @@
                 omnis...
               </p>
             </div>
-            <div class="pt-3">
-              <img src="./images/short-news-img/short-news2.jpg" />
+            <div class="pt-3 w-full">
+              <img
+                src="./images/short-news-img/short-news2.jpg"
+                class="w-full"
+              />
               <p class="my-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
                 omnis...
@@ -450,8 +536,11 @@
                 omnis...
               </p>
             </div>
-            <div class="pt-3">
-              <img src="./images/short-news-img/short-news2.jpg" />
+            <div class="pt-3 w-full">
+              <img
+                src="./images/short-news-img/short-news2.jpg"
+                class="w-full"
+              />
               <p class="my-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
                 omnis...
@@ -464,8 +553,11 @@
                 omnis...
               </p>
             </div>
-            <div class="pt-3">
-              <img src="./images/short-news-img/short-news2.jpg" />
+            <div class="pt-3 w-full">
+              <img
+                src="./images/short-news-img/short-news2.jpg"
+                class="w-full"
+              />
               <p class="my-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
                 omnis...
@@ -487,7 +579,7 @@
             </div>
           </div>
 
-          <div class="lg:w-52 w-full ml-3 pl-3">
+          <div class="lg:w-52 w-full md:ml-3 md:pl-3">
             <div>
               <p class="text-center">ADVERTISEMENT</p>
               <img
@@ -609,7 +701,7 @@
     Adds section left & right side
     ----------------------------------------------------->
     <section>
-      <div class="absolute top-44 w-full flex justify-between">
+      <div class="absolute top-44 w-full flex justify-between hidden md:block">
         <img
           src="./images/adds/fix1.png"
           alt="adds"
@@ -626,7 +718,7 @@
     Adds section 
     ----------------------------------------------------------->
     <section>
-      <div class="container mx-auto px-32 pb-10">
+      <div class="container mx-auto md:px-32 px-4 pb-10">
         <img src="./images/adds/add2.jpeg" class="w-full" />
       </div>
     </section>
